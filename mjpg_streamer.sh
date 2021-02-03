@@ -29,5 +29,7 @@ do
   then
     echo 'Restart port:'${devices[$device]}
     /usr/local/bin/mjpg_streamer -b -i 'input_uvc.so -f 30 -r 1920x1080 -d '$device' -n -q 100 -dv_timings' -o 'output_http.so -p '${devices[$device]}
+    # front
+    #/usr/local/bin/mjpg_streamer -b -i 'input_uvc.so -f 30 -r 1920x1080 -d '$device' -n -y -q 100 -dv_timings' -o 'output_http.so -p '${devices[$device]}
   fi
 done
