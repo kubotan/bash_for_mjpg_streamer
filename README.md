@@ -1,0 +1,1 @@
+# bash_for_mjpg_streamer
