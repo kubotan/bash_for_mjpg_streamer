@@ -19,7 +19,7 @@ if [ $is_reprobe -eq 1 ]
 then
   echo 'Start reprobe...'
   /usr/bin/pkill mjpg_streamer
-  /sbin/rmmod uvcvideo
+  /sbin/rmmod -f uvcvideo
   /sbin/modprobe uvcvideo
 fi
 
